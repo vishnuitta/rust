@@ -9,5 +9,11 @@ fn main() {
 //    let state = pool.state();
 //    dbg!(pool);
 
-    let result = libzfs_handle.create_filesystem("test/abcd").unwrap();
+    let result = libzfs_handle.create_filesystem("test/abcd");
+    if result.is_ok() {
+        dbg!(result.unwrap());
+    } else {
+        dbg!(result.err().unwrap());
+    }
+    
 }
