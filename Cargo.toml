@@ -8,6 +8,5 @@ edition = "2018"
 
 [dependencies]
 
-[dependencies.libzfs]
-branch = "0712"
-git = "https://github.com/gila/rust-libzfs"
+[dependencies.libzfs-rs]
+git = "https://github.com/vishnuitta/libzfs-rs"
